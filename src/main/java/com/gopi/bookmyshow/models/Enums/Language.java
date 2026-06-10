@@ -1,4 +1,11 @@
 package com.gopi.bookmyshow.models.Enums;
 
-public enum lANGUAGE {
+public enum Language {
+    HIND,
+    ENGLISH,
+    SPENISH,
+    FFRENCH,
+    KOREAN,
+    TAMIL,
+    TELGU
 }
