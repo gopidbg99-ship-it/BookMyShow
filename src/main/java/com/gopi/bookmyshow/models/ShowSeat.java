@@ -1,10 +1,7 @@
 package com.gopi.bookmyshow.models;
 
 import com.gopi.bookmyshow.models.Enums.ShowSeatStatus;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,8 +10,10 @@ import lombok.Setter;
 @Entity
 public class ShowSeat extends BaseModel{
 @ManyToOne
+@JoinColumn(name = "showSeat_id")
     private Seat seat;
-@ManyToOne
+    @ManyToOne
+    @JoinColumn(name = "showSeat_id")
     public Show show;
 
     //private Long price;
